@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
-    @product = products(:ruby)
+    @product = products(:two)
     @update = {
     title: 'Lorem Ipsum',
     description: 'Wibbles are fun!',
@@ -26,7 +26,6 @@ class ProductsControllerTest < ActionController::TestCase
     assert_difference('Product.count') do
       post :create, product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @product.title }
     end
-
     assert_redirected_to product_path(assigns(:product))
   end
 

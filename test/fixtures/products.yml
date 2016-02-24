@@ -12,7 +12,7 @@ ruby:
    image_url: ruby.png
 
 two:
-  title: MyString
-  description: MyText
-  image_url: MyString.png
+  title: Programming Ruby On Rails  2.2.4 
+  description: Ruby on Rails is much funner than I thought
   price: 9.99
+  image_url: MyString.png
