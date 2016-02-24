@@ -11,8 +11,8 @@ ruby:
    price: 49.50
    image_url: ruby.png
 
-two:
-  title: Programming Ruby On Rails  2.2.4 
-  description: Ruby on Rails is much funner than I thought
-  price: 9.99
-  image_url: MyString.png
+one:
+   title: Programming Ruby On Rails  2.2.4 
+   description: Ruby on Rails is much funner than I thought
+   price: 9.99
+   image_url: MyString.png
