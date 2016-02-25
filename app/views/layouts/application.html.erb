@@ -9,8 +9,8 @@
 	</head>
 
 	<body class="<%= controller.controller_name %>">
-		<div id="banner">
-			<%= image_tag("logo.png", :alt => "ruby feed") %>
+		<div id="banner" class= "banner-wrapper">
+			 <%= image_tag("logo", :alt => "ruby feed") %>
 			<%= @page_title || "Pragmatic Bookshelf" %>
 		</div>
 		<div id="columns">
@@ -20,7 +20,7 @@
 					<li><a href="http://www..../faq">Questions</a></li>
 					 <li><a href="http://www..../news">News</a></li>
 					<li><a href="http://www..../contact">Contact</a></li>
-					<li><%= 1.hour.from_now.localtime =%></li>
+					<li id = "time"><%= 0.hour.from_now.localtime =%></li>
 				</ul>
 			</div>
 			<div id="main">
