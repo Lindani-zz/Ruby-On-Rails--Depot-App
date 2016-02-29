@@ -6,6 +6,4 @@
 	<% @cart.line_items.each do |item| %>
 	<li><%= item.quantity %> &times; <%= item.product.title %></li>
 <% end %>
-<ul>
-	<%= buttton_to 'empty cart', method: :delete data: {confirm: 'Are you sure?'}%>
-</ul>
+<%= button_to 'empty cart', @cart, method: :delete, data: {confirm: 'Are you sure?'}%>
