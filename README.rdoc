@@ -1,6 +1,7 @@
 == README
 
-[![Build Status](https://travis-ci.org/Lindani/Ruby-On-Rails--Depot-App.png?branch=master)](https://travis-ci.org/Lindani/Ruby-On-Rails--Depot-App)
+
+!https://travis-ci.org/Lindani/Ruby-On-Rails--Depot-App.svg?branch=master!:https://travis-ci.org/Lindani/Ruby-On-Rails--Depot-App
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
