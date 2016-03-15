@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   include  CurrentCart
-  before_action :set_cart, only: [new, :create]
+  before_action :set_cart, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
   # GET /orders
@@ -20,6 +20,7 @@ class OrdersController < ApplicationController
       redirect_to store_url, notice: "Your cart is empty"
       return
     end
+
     @order = Order.new
   end
 
