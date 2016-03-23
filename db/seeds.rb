@@ -16,4 +16,4 @@
 		</p>},
 		image_url: 'ruby.jpg',
 		price: 49.95
-	)
+	)AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
