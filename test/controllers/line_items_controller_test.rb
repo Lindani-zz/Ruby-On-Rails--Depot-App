@@ -2,6 +2,7 @@ require 'test_helper'
 
 class LineItemsControllerTest < ActionController::TestCase
   setup do
+    sign_in users(:user1)
     @line_item = line_items(:one)
   end
 
