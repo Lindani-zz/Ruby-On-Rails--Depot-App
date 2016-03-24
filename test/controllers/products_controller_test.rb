@@ -2,6 +2,7 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
+    sign_in users(:user1)
     @product = products(:ruby)
     @update = {
     title: 'Lorem Ipsum',
@@ -12,6 +13,7 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   test "should get index" do
+    # sign_in users(:user1)
     get :index
     assert_response :success
     assert_not_nil assigns(:products)
@@ -45,6 +47,7 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   test "should destroy product" do
+    # sign_in users(:user1)
     assert_difference('Product.count', -1) do
       delete :destroy, id: @product
     end
